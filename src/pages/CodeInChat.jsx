@@ -36,9 +36,7 @@ export default function CodeInChat() {
 
                 <h2 className={styles.title}><i>Encoded Chat...</i></h2>
 
-                <p>The is code in chat, in the way we have “sayings”, there are shortcuts for analogies in chats. </p>
-                <p>Through code of semantics and such we even tend to categorize and apply the usages of such into personalities and voice.</p>
-
+                <p>In chat communication, there’s a "code" similar to how we use sayings in language. Shorthand tools are used for creating analogies or expressing ideas quickly. These codes, shaped by semantics and context, help define personalities and voices in digital conversations. From punctuation choices to abbreviations, emojis, and even the platform used, each element contributes to tone, inflection, and the unique personality of a chat. Variations, like emoji interpretations across devices or generational shorthand, further diversify how we categorize and interpret these "voices" in text.</p>
                 <h3 className={styles.sectionHeader}>What chat personality are you?</h3>
 
                 <ChatPersonalityBubble text={"The Formal One:"} image={TextBubble1} gray={false} />
