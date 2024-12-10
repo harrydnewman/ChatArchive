@@ -1,0 +1,16 @@
+.BackToTop {
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.BackToTop p {
+    color: rgb(236, 78, 16);
+    font-size: 30px !important;
+    font-weight: bold;
+}
+
+.BackToTop:hover {
+    cursor: pointer;
+}

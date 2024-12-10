@@ -1,0 +1,85 @@
+.loadingBubbleDiv { 
+    border-radius: 1.15rem;
+    font-size: 2rem;
+    font-family: "SanFrancisco";
+    line-height: 1.25;
+    max-width: 70%;
+    width: fit-content;
+    padding: 0.5rem 0.875rem;
+    position: relative;
+    background-color: #e5e5ea;
+}
+
+.loadingBubble {
+    align-items: flex-start;
+    background-color: #e5e5ea;
+    color: #000;
+    margin: 1px 0;
+}
+
+.dotDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    position: relative;
+}
+
+.dotDiv::before,
+.dotDiv::after {
+    bottom: -0.1rem;
+    content: "";
+    height: 1rem;
+    position: absolute;
+}
+
+.dotDiv::before {
+    border-bottom-right-radius: 0.8rem 0.7rem;
+    /* border-left: 1rem solid #1515de;
+    background-color: ; */
+    border-left: 1.275rem solid #e5e5ea;
+    left: -0.3rem;
+    transform: translate(-15px, 0.46rem);
+}
+
+.dotDiv::after {
+    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(227, 6, 6); */
+    border-bottom-right-radius: 0.5rem;
+    left: 20px;
+    transform: translate(-41px, 6.75px);
+    width: 7px;
+}
+
+.dot {
+    width: 9px;
+    height: 9px;
+    background-color: gray;
+    border-radius: 50%;
+    animation: colorChange 1s infinite;
+    margin: 7px 0;
+}
+
+.dot:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: gray;
+    }
+    50% {
+        background-color: lightgray;
+    }
+    100% {
+        background-color: gray;
+    }
+}

@@ -1,0 +1,127 @@
+/* .HomePageHeaderDiv { 
+    background-color: rgb(50, 50, 50);
+    height: 150px;
+    color: white;
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+} */
+
+.HomePageHeaderDiv {
+    position: sticky; /* Keeps it in place while the rest of the page scrolls */
+top: 0; /* Ensures it sticks to the top of the parent */
+z-index: 10; /* Ensures it stays above the scrolling content */
+background-color: rgb(50, 50, 50);
+padding: 10px; /* Optional: Add padding */
+width: 100%;
+height: 170px;
+color: white;
+}
+
+
+
+
+.TopSection {
+    /* background-color: purple; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+    padding: 10px 10px;
+}
+
+.TopSection p{
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 21px;
+}
+
+.BottomSection {
+    display: flex;
+    flex-direction: row;
+}
+
+.BackButton {
+    /* background-color: skyblue; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 9px;
+    padding-left: 2%;
+}
+
+.BackButtonArrow {
+    font-size: 45px;
+    font-family: "SanFrancisco";
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.BackButtonNumber{
+    font-size: 35px;
+    font-family: "SanFrancisco";
+    font-weight: bold;
+    padding: 0;
+    margin-top: 8px;
+
+}
+
+
+
+.chatPerson {
+    /* background-color: rgb(56, 195, 14); */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.chatImage {
+    background-color: black;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.chatImage p {
+    font-size: 35px;
+}
+
+.chatPersonName {
+    margin-top: 5px;
+}
+
+.facetimeIconDiv {
+    /* background-color: brown; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 1%;
+}
+
+.facetimeIconDiv img {
+    width: 60px;
+    height: 60px;
+    margin-top: 9px;
+    margin-right: 5px;
+}
+
+
+ 
+  /* general styling */
+  @font-face {
+    font-family: "SanFrancisco";
+    src:
+      url("https://cdn.rawgit.com/AllThingsSmitty/fonts/25983b71/SanFrancisco/sanfranciscodisplay-regular-webfont.woff2") format("woff2"),
+      url("https://cdn.rawgit.com/AllThingsSmitty/fonts/25983b71/SanFrancisco/sanfranciscodisplay-regular-webfont.woff") format("woff");
+  }
+  

@@ -1,0 +1,59 @@
+.infoTitleDiv {
+    display: flex;
+    flex-direction: row;
+    /* padding: 2%; */
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    position: relative; /* Establish a positioning context for child elements */
+    margin-bottom: 5%; 
+}
+
+.arrowDiv {
+    width: 15%;
+    position: absolute; /* Ensure proper stacking and layout */
+    z-index: 500; /* Keep below .textDiv */
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowDiv a {
+    text-decoration: none;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.arrowDiv h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    
+}
+
+.textDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    position: relative; /* Position on top of .arrowDiv */
+    top: 0; 
+    left: 0; 
+    z-index: 100; /* Higher than .arrowDiv */
+}
+
+.textDiv h1 {
+    padding: 0;
+    margin: 0;
+    text-align: center; 
+    font-size: 30px;
+    margin-left: 5%;
+}

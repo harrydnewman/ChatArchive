@@ -1,0 +1,43 @@
+.mainDiv {
+    display: flex; 
+    flex-direction: row;
+    max-height: 100%;
+    /* padding: 1% 0; */
+   justify-content: space-between;
+   align-items: center;
+}
+
+.image {
+    max-height: 50%;
+    height: 50%;
+    object-fit: cover;
+    max-width: 40%;
+    /* margin: 2%; */
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.image img {
+    max-width: 100%;
+    max-height: 100%;
+    /* padding: 1%; */
+    object-fit: contain; /* Ensures the image maintains its aspect ratio */
+}
+
+
+.text {
+    max-width: 60%;
+    /* padding-left: 2%; */
+    /* padding-right: 2%; */
+    
+    /* margin: 2%; */
+}
+
+.text p {
+    padding: 0 2%;
+}
+
+.text a {
+    text-decoration: none;
+}

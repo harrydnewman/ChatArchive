@@ -1,0 +1,17 @@
+
+ 
+.AboutTextDiv {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+ .AboutTextDiv p {
+    margin-bottom: 1%;
+    margin-top: 1%;
+    text-align: left;
+} 
+
+.AboutTextDiv a {
+    text-decoration: none;
+}

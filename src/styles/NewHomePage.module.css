@@ -1,0 +1,269 @@
+/* .HomePageDiv { 
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: rgb(10, 205, 226);
+} */
+
+.HomePageDiv {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ensure it takes the full viewport height */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Prevent overflow of the entire page */
+  /* background-color: rgb(10, 205, 226); */
+}
+
+.MessageDiv {
+    padding: 5%;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+   /* justify-content: flex-end; */
+    width: 100%;
+    flex: 1; 
+    overflow-y: auto;
+    padding: 10px;
+    max-width: 100%; /* Ensures it doesn't exceed the viewport width */
+    box-sizing: border-box; /* Includes padding in the width calculation */
+    margin: 0 auto; /* Centers the message div */
+  }
+
+/* .imessage {
+    background-color: #fff;
+    border: 1px solid #e5e5ea;
+    border-radius: 0.25rem;
+    
+    font-family: "SanFrancisco";
+    font-size: 1.25rem;
+    margin: 0 auto 1rem;
+    max-width: 600px;
+    padding: 0.5rem 1.5rem; 
+    
+  } */
+
+
+  
+  .imessage p {
+    border-radius: 1.15rem;
+    font-size: 1.3rem;
+    font-family: "SanFrancisco";
+    line-height: 1.25;
+    max-width: 70%;
+    width: fit-content;
+    padding: 0.5rem .875rem;
+    position: relative;
+  }
+  
+  .imessage p::before,
+  .imessage p::after {
+    bottom: -0.1rem;
+    content: "";
+    height: 1rem;
+    position: absolute;
+  }
+  
+  p.fromMe {
+    /* align-self: flex-end; */
+    margin-left: auto;
+    background-color: #248bf5;
+    color: #fff; 
+    /* margin-left: auto; */
+  }
+  
+  p.fromMe::before {
+    border-bottom-left-radius: 0.8rem 0.7rem;
+    border-right: 1.3rem solid #248bf5;
+    right: -0.35rem;
+    transform: translate(0, -0.1rem);
+  }
+  
+  p.fromMe::after {
+    background-color: #fff;
+    border-bottom-left-radius: 0.5rem;
+    right: -40px;
+    transform:translate(-30px, -2px);
+    width: 10px;
+  } 
+  
+   p[class^="from-"] {
+    margin: 0.5rem 0;
+    width: fit-content;
+  }
+  
+  p.fromMe ~ p.fromMe {
+    margin: 0.25rem 0 0;
+  }
+  
+  p.fromMe ~ p.fromMe:not(:last-child) {
+    margin: 0.25rem 0 0;
+  }
+  
+  p.fromMe ~ p.fromMe:last-child {
+    margin-bottom: 0.5rem;
+  }
+
+   
+  p.fromThem {
+    align-items: flex-start;
+    background-color: #e5e5ea;
+    color: #000;
+    margin-bottom: 3px;
+    margin-top: 3px;
+  }
+  
+  p.fromThem:before {
+    border-bottom-right-radius: 0.8rem 0.7rem;
+    /* border-left: 1.15rem solid #04049a; */
+    border-left: 1.3rem solid #e5e5ea;
+    left: -0.3rem;
+    transform: translate(0, -0.1rem);
+  }
+  
+  p.fromThem::after {
+    background-color: white;
+    border-bottom-right-radius: 0.5rem;
+    left: 20px;
+    transform: translate(-30px, -2px);
+    width: 10px;
+  }
+
+  .loadingBubbleDiv p {
+    border-radius: 1.15rem;
+    font-size: 2rem;
+    font-family: "SanFrancisco";
+    line-height: 1.25;
+    max-width: 70%;
+    width: fit-content;
+    padding: 0.5rem .875rem;
+    position: relative;
+  }
+  
+  .loadingBubbleDiv p::before,
+  .loadingBubbleDiv p::after {
+    bottom: -0.1rem;
+    content: "";
+    height: 1rem;
+    position: absolute;
+  }
+
+  p.loadingBubble {
+    align-items: flex-start;
+    background-color: #e5e5ea;
+    color: #000;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    /* font-size: 1.5rem; */
+  }
+  
+  p.loadingBubble:before {
+    border-bottom-right-radius: 0.8rem 0.7rem;
+    /* border-left: 1.15rem solid #04049a; */
+    border-left: 1.3rem solid #e5e5ea;
+    left: -0.3rem;
+    transform: translate(0, -0.1rem);
+  }
+  
+  p.loadingBubble::after {
+    background-color: white;
+    border-bottom-right-radius: 0.5rem;
+    left: 20px;
+    transform: translate(-30px, -2px);
+    width: 10px;
+  }
+/*   
+  p[class^="from-"].emoji {
+    background: none;
+    font-size: 2.5rem;
+  } */
+/*   
+  p[class^="from-"].emoji::before {
+    content: none;
+  }
+   */
+  /* .no-tail::before {
+    display: none;
+  }
+  
+  .margin-b_none {
+    margin-bottom: 0 !important;
+  }
+  
+  .margin-b_one {
+    margin-bottom: 1rem !important;
+  }
+  
+  .margin-t_one {
+    margin-top: 1rem !important;
+  } */
+  
+  
+  .otherOptions {
+    height: 48px;
+    width: 76px;
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    margin: 10px;
+  }
+  
+  .otherOptions p {
+    font-size: 1.5rem;
+    
+  }
+  
+  
+
+
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: gray;
+    border-radius: 50%;
+    animation: colorChange 1s infinite;
+}
+
+.dot:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: gray;
+    }
+    50% {
+        background-color: lightgray;
+    }
+    100% {
+        background-color: gray;
+    }
+}
+
+  
+  
+  
+  
+  
+  
+  
+  /* general styling */
+  @font-face {
+    font-family: "SanFrancisco";
+    src:
+      url("https://cdn.rawgit.com/AllThingsSmitty/fonts/25983b71/SanFrancisco/sanfranciscodisplay-regular-webfont.woff2") format("woff2"),
+      url("https://cdn.rawgit.com/AllThingsSmitty/fonts/25983b71/SanFrancisco/sanfranciscodisplay-regular-webfont.woff") format("woff");
+  }
+  

@@ -1,0 +1,12 @@
+ 
+
+.archivePageDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+    background: rgb(200,134,164);
+    background: radial-gradient(circle, rgb(216, 140, 176) 0%, rgb(220, 171, 120) 98%); 
+}

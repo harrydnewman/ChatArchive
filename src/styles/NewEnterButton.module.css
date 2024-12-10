@@ -1,0 +1,63 @@
+.enterButtonDiv { 
+    /* background-color: green; */
+    border-top: 3px solid black;
+    margin-top: 10px;
+  }
+  
+  .TopSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: purple; */
+    width: 100%;
+    height: 90px;
+  }
+  .TopSection h1{
+    font-size: 90px;
+  }
+
+  .imgDiv {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    /* background-color: blue; */
+    transform: translate(-18px, 15px);
+    
+  }
+
+  .imgDiv img {
+    width: 95px;
+    height: 95px;
+    object-fit: contain;
+    
+  }
+
+  .BottomSection {
+    /* background-color: rgb(137, 220, 20); */
+  }
+
+    .BottomSection h2 {
+    font-size: 42px;
+    margin-top: -15px;
+    padding-left: 8%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    
+  }
+
+  .enterButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+  }
+
+  .enterButton a{
+   font-size: 24px;
+   color: blue;
+   text-decoration: none;
+   text-align: center;
+  }
+
