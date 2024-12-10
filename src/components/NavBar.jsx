@@ -22,7 +22,7 @@ export default function Navbar({ currentPage }) {
             </div>
             <div className={isCurrentPage('/codeinchat') ? styles.imessage : styles.unselectedButton}>
                 <a href='/codeinchat'>
-                    {isCurrentPage('/codeinchat') ? <p className={styles.fromThem}>🕵️‍♀️codeinchat</p> : <p>🕵️‍♀️</p>}
+                    {isCurrentPage('/codeinchat') ? <p className={styles.fromThem}>🕵️‍♀️encoded</p> : <p>🕵️‍♀️</p>}
                 </a>
             </div>
             <div className={isCurrentPage('/future') ? styles.imessage : styles.unselectedButton}>
