@@ -58,5 +58,7 @@ This site is hosted on Harry's portfolio website, so it should be online for the
 
 ## Google Drive Link
 
+Here is a link to a google drive folder containing this read me text, as well as the code found within this repository.
+
 https://drive.google.com/drive/folders/117BPh1RnZvr3sNlMJtSfPhl4vHE6eYh1?usp=sharing
 
